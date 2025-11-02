@@ -1,0 +1,62 @@
+:root{
+    --font-space: "Space Grotesk", serif;
+
+    /* COLORS */
+    --white-color: #fff;
+    --black-color: #000;
+    --white-ish-color:#E8E8E8;
+    --gray-color: #ddd;
+    --red-color:#772b44;
+    --purple-ish-color:#382B78;
+    --green-color:#2b775e;
+    --dark-color: #141414;
+}
+
+.darkmode{
+
+     body {
+        background-color: var(--dark-color);
+        color: var(--white-ish-color);
+    }
+
+    .floating{
+        background-color: #3b3b3b;
+        border: 1px solid #222222;
+        box-shadow: 0 4px 12px rgba(253, 253, 253, 0.1);
+    }
+
+    .nav-links a{
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .nav-links a:hover{
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .nav-links a::after{
+        background: var(--white-ish-color);
+    }
+
+    .greeting-container{
+        background-color: var(--dark-color);
+    }
+
+    .greeting i{
+        color: var(--white-ish-color);
+    }
+
+    .about-me, .knowledge{
+        background-color: #272626;
+        border: 1px solid #222222;
+
+    }
+
+    .cards span {
+        color: var(--white-ish-color);
+      }
+
+    footer{
+        background-color: #3b3b3b; 
+    }
+    
+}

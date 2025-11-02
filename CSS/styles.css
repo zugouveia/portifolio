@@ -1,0 +1,817 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+body {
+  font-family: var(--font-space);
+  background: #dcdcdc;
+  /* background: light-dark (#e8e8e8 , #636363); */
+}
+
+/* DARKMODE */
+#theme-switch {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--red-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+#theme-switch i {
+  font-size: 1.2rem;
+  color: var(--white-ish-color);
+}
+
+#theme-switch i:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch i:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch i:last-child {
+  display: block;
+}
+/* FIM DARKMODE */
+
+/* BUTTON TO TOP */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  background-color: rgba(119, 43, 68, 0.9);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#myBtn img {
+  width: 25px;
+  height: auto;
+}
+
+#myBtn:hover {
+  background-color: var(--red-color); /* Add a dark-grey background on hover */
+}
+
+/* FIM BUTTON TO TOP */
+
+.divider {
+  border: none;
+  border-top: 3px solid var(--green-color);
+  border-radius: 20px;
+  margin: 20px 0;
+  width: 30%;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  /* margin: 20px 0; */
+  margin-bottom: 10px;
+}
+
+.floating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 80%;
+  background-color: #fff;
+  border: 1px solid var(--gray-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  top: 20px;
+  z-index: 2;
+}
+
+.floating ul {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  border-radius: 20px;
+  margin-right: 8px;
+}
+
+.logo span {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.nav-links a {
+  font-size: 1.1rem;
+  margin: 0 10px;
+  transition: 0.1s;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-links a:hover {
+  /* font-weight: 500; */
+  color: rgba(0, 0, 0, 1);
+}
+
+.nav-links a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background: #000;
+  display: block;
+  position: absolute;
+  transition: 0.3s;
+  pointer-events: none;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+/* FIM HEADER */
+
+/* GREETING */
+.greeting-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  background: #dcdcdc;
+  padding: 0 50px;
+}
+
+.greeting {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 10px;
+}
+
+.greeting h3 {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  color: var(--red-color);
+  text-transform: uppercase;
+}
+
+.greeting h1 {
+  text-align: justify;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.greeting i {
+  font-size: 1rem;
+  color: #000;
+}
+
+.greeting-photo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 10px;
+}
+
+.greeting-photo img {
+  width: 400px;
+  height: auto;
+}
+/* FIM GREETING */
+
+/* PAGE DIVIDER */
+.page-divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* ABOUT ME */
+.about-me-container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #fff; */
+}
+
+.about-me {
+  /* width: 80%; */
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-ish-color);
+  border: 2px solid var(--gray-color);
+  border-radius: 10px;
+}
+
+#about-me-title {
+  width: 30%;
+}
+
+#about-me-title span {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  /* padding: 0 5px; */
+}
+
+.cv {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.cv button {
+  width: 100%;
+  height: 50px;
+  background-color: var(--red-color);
+  border: 3px solid var(--red-color);
+  border-radius: 20px;
+}
+
+.cv button:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.cv button a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 20px;
+  color: var(--white-color);
+}
+
+.cv button a:hover {
+  color: var(--black-color);
+}
+
+#about-me-text {
+  width: 60%;
+  /* height: 100%; */
+  align-items: center;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0px 50px;
+}
+
+#about-me-text p {
+  margin: 40px 0;
+}
+/*FIM ABOUT ME */
+
+/* KNOWLEGE */
+.knowledge-container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.knowledge {
+  /* width: 80%; */
+  width: 90%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 30px;
+  background-color: var(--white-ish-color);
+  border: 2px solid var(--gray-color);
+  border-radius: 10px;
+}
+
+.knowledge h3 {
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+.knowledge .divider {
+  width: 20%;
+}
+
+.knowledge-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cards {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards:hover {
+  scale: 1.2;
+}
+
+.cards i {
+  font-size: 5rem;
+  /* color: var(--green-color); */
+}
+
+.card-html {
+  color: #e34c26;
+}
+
+.card-css {
+  color: #264de4;
+}
+
+.card-js {
+  color: #f0db4f;
+}
+
+.card-wp {
+  color: #00749c;
+}
+
+.cards span {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 500;
+  color: var(--black-color);
+}
+/*FIM KNOWLEGE */
+
+/* PROJETOS */
+.projects-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 110px;
+}
+
+.projects h3 {
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+.projects .divider {
+  margin: 20px auto;
+  margin-bottom: 50px;
+  width: 12%;
+}
+
+/* IMAGENS DO SITE */
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 50px;
+}
+
+.image {
+  width: 390px;
+  height: 244px;
+  position: relative;
+  /* margin: 0 50px; */
+}
+
+.image img {
+  width: 390px;
+  height: 244px;
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+.project-title {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-title h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--white-ish-color);
+  margin-bottom: 15px;
+}
+
+.project-title #icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#icones i {
+  font-size: 2rem;
+  color: var(--white-ish-color);
+  margin: 0 10px;
+}
+
+.project-text {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  border: none;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+.project-text:hover {
+  opacity: 1;
+}
+
+.project-text p {
+  font-size: 1rem;
+  color: var(--white-color);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.project-text button {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  background-color: var(--white-color);
+  /* border: 3px solid var(--white-color); */
+  border-radius: 20px;
+
+  background-color: var(--red-color);
+  border: 1px solid var(--red-color);
+}
+
+.project-text button span {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 20px;
+  color: var(--white-color);
+}
+
+.project-text button:hover {
+  background-color: rgba(251, 251, 251, 0.8);
+  /* border: 3px solid var(--red-color); */
+}
+
+.project-text button span:hover {
+  color: var(--black-color);
+}
+
+.project-text > * {
+  transform: translateY(25px);
+  transition: transform 0.6s;
+}
+
+.project-text:hover > * {
+  transform: translateY(0);
+}
+/* IMAGENS DO SITE */
+
+/* FIM PROJETOS */
+
+/* CONTATO */
+.contato-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.contato {
+  width: 90%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 30px;
+}
+
+.contato h3 {
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+.contato .divider {
+  width: 25%;
+}
+
+.contato-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.social-cards {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-cards:hover {
+  scale: 1.1;
+}
+
+.social-cards span {
+  font-size: 1.3rem;
+}
+
+#social-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  /* margin: 10px 0; */
+}
+
+.social-cards i {
+  font-size: 3rem;
+  color: var(--red-color);
+  /* padding: 20px;
+  background-color: var(--red-color);
+  border: none;
+  border-radius: 50%; */
+}
+
+/* FIM CONTATO */
+
+/* MEDIA QUERIE */
+
+@media (max-width: 1280px) {
+  .about-me-container,
+  .about-me {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .greeting-container {
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+
+  .about-me-container {
+    height: 100vh;
+  }
+
+  .about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-me-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .cv {
+    margin-top: 30px;
+  }
+
+  #about-me-text {
+    width: 90%;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .greeting-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .greeting-photo {
+    width: 90%;
+  }
+
+  .greeting {
+    width: 90%;
+    row-gap: 20px;
+  }
+
+  #about-me-title {
+    width: 100%;
+  }
+
+  #about-me-title span {
+    font-size: 1.8rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .contato {
+    height: auto;
+  }
+
+  .contato-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 70px;
+  }
+
+  .social-cards:hover {
+    scale: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .greeting-photo img {
+    width: 300px;
+  }
+
+  .greeting h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cv button a {
+    font-size: 1rem;
+  }
+
+  #about-me-title {
+    width: 100%;
+  }
+
+  #about-me-title span {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #about-me-text {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .knowledge-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .contato {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .floating {
+    display: none;
+  }
+
+  .greeting-container {
+    height: auto;
+  }
+
+  .greeting h1 {
+    font-size: 1.2rem;
+  }
+
+  .greeting h3 {
+    font-size: 0.8rem;
+  }
+
+  .greeting-photo img {
+    width: 200px;
+  }
+
+  .about-me-container,
+  .about-me {
+    height: auto;
+  }
+
+  .cv button a {
+    font-size: 0.8rem;
+  }
+
+  #about-me-title span {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  #about-me-text {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .knowledge-container {
+    height: auto;
+  }
+
+  .knowledge h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .knowledge-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .image,
+  .image img {
+    width: 320px;
+    height: auto;
+  }
+
+  .project-text p {
+    font-size: 0.8rem;
+  }
+
+  .project-text button span {
+    font-size: 0.8rem;
+  }
+
+  .cards i {
+    font-size: 3rem;
+  }
+
+  .contato h3 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}

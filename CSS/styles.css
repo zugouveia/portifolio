@@ -215,7 +215,7 @@ header {
 /* ABOUT ME */
 .about-me-container {
   width: 100%;
-  height: 70vh;
+  /* height: 75vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,7 +225,7 @@ header {
 .about-me {
   /* width: 80%; */
   width: 90%;
-  height: 70vh;
+  /* height: 75vh; */
   display: flex;
   align-items: center;
   justify-content: center;

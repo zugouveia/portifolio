@@ -1,62 +1,30 @@
-:root{
-    --font-space: "Space Grotesk", serif;
+:root {
+  /* --bg: #12181b;
+  --surface: #1b2328;
+  --surface-alt: #161d21;
+  --text-primary: #f5f1e6;
+  --text-secondary: #b9b29c;
+  --text-muted: #8c8674;
+  --gold: #c9a24b;
+  --gold-soft: rgba(201, 162, 75, 0.14);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(201, 162, 75, 0.35); */
 
-    /* COLORS */
-    --white-color: #fff;
-    --black-color: #000;
-    --white-ish-color:#E8E8E8;
-    --gray-color: #ddd;
-    --red-color:#772b44;
-    --purple-ish-color:#382B78;
-    --green-color:#2b775e;
-    --dark-color: #141414;
-}
+  --bg: #14201c;
+  --surface: #1c2b25;
+  --surface-alt: #101a16;
+  --text-primary: #efead9;
+  --text-secondary: #a8af97;
+  --text-muted: #7a8272;
+  --gold: #b8935a;
+  --gold-soft: rgba(184, 147, 90, 0.14);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(184, 147, 90, 0.35);
 
-.darkmode{
+  --font-serif: "Fraunces", serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-sans: "Inter", sans-serif;
 
-     body {
-        background-color: var(--dark-color);
-        color: var(--white-ish-color);
-    }
-
-    .floating{
-        background-color: #3b3b3b;
-        border: 1px solid #222222;
-        box-shadow: 0 4px 12px rgba(253, 253, 253, 0.1);
-    }
-
-    .nav-links a{
-        color: rgba(255, 255, 255, 0.7);
-    }
-
-    .nav-links a:hover{
-        color: rgba(255, 255, 255, 1);
-    }
-
-    .nav-links a::after{
-        background: var(--white-ish-color);
-    }
-
-    .greeting-container{
-        background-color: var(--dark-color);
-    }
-
-    .greeting i{
-        color: var(--white-ish-color);
-    }
-
-    .about-me, .knowledge{
-        background-color: #272626;
-        border: 1px solid #222222;
-
-    }
-
-    .cards span {
-        color: var(--white-ish-color);
-      }
-
-    footer{
-        background-color: #3b3b3b; 
-    }
-    
+  --radius: 10px;
+  --wrap: 1080px;
 }

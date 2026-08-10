@@ -2,344 +2,276 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portifólio | Zu Gouveia</title>
-  <!-- LOGO -->
-  <link rel="shortcut icon" href="./assets/img/+.png" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernanda Gouveia — Desenvolvedora</title>
+  
+  <meta name="description" content="Portfólio Zu Gouveia">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./CSS/reset.css" />
-  <link rel="stylesheet" href="./CSS/styles.css" />
-  <link rel="stylesheet" href="./CSS/var.css" />
-  <link rel="stylesheet" href="./CSS/footer.css" />
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 
-  <!-- ICONS -->
+  <!-- icones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/var.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/media.css">
 </head>
 
 <body>
-  <header>
-    <div class="floating">
 
-      <nav class="nav-links">
-        <a href="index.html">Zu Gouveia</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="wordmark">ZU GOUVEIA</a>
+      <nav class="nav" id="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
       </nav>
-
-      <ul>
-        <li class="nav-links"><a href="#projects">Projetos</a></li>
-        <li class="nav-links"><a href="#contact">Contato</a></li>
-      </ul>
-
+      <!-- <a href="assets/cv-fernanda-gouveia.pdf" class="btn btn-ghost btn-small" download>
+        <i class="ti ti-file-download" aria-hidden="true"></i> CV
+      </a> -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-
-    <!-- DARKMODE -->
-    <button id="theme-switch">
-      <i class="fa-solid fa-moon"></i>
-      <i class="fa-solid fa-sun"></i>
-    </button>
-
-
   </header>
 
-  <!-- GO TO TOP BUTTON -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
-    <img src="./assets/img/icons8-up-52-white.png  " alt="">
-  </button>
+  <main id="top">
 
-  <main>
+    <!-- HERO/ APRESENTAÇÃO -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <!-- <img src="assets/img/foto.jpg" alt="Foto de Fernanda Gouveia" class="hero-photo"> -->
+        <img src="assets/img/photo-perfil.png" alt="Foto de Fernanda Gouveia" class="greeting-photo">
+        <p class="eyebrow">Desenvolvedora em formação</p>
+        <!-- <h1 class="hero-name">Fernanda Gouveia</h1> -->
+        <!-- <p class="hero-alt">"Zu" pra quem me conhece.</p> -->
+        <p class="hero-alt">Oi! MEU NOME É FERNANDA GOUVEIA, MAS PODE ME CHAMAR DE ZU GOUVEIA!</p>
+        <!-- <p class="hero-role">Construindo aplicações completas, do banco de dados à interface.</p> -->
+        <p class="hero-role">Sou uma Desenvolvedora que adora transformar ideias em soluções digitais robustas e
+          experiências criativas. Minha paixão é criar sistemas e interfaces que não só funcionem bem, mas que também
+          encantem quem os usa. Acredito que tecnologia é uma forma de arte e eu estou aqui para projetar o futuro com
+          código.</p>
 
-    <!-- GREETING -->
-    <section class="greeting-container">
-      <div class="greeting">
-        <h3>
-          <i class="fa-solid fa-less-than"></i>
-          Oi! Meu nome é Fernanda Gouveia, mas pode me chamar de Zu Gouveia!
-          <i class="fa-solid fa-greater-than"></i>
-        </h3>
-        <h1>
-          Sou uma Desenvolvedora que adora transformar ideias em soluções digitais robustas e experiências criativas.
-          Minha paixão é criar sistemas e interfaces que não só funcionem bem, mas que também encantem quem os usa.
-          Acredito que tecnologia é uma forma de arte e eu estou aqui para projetar o futuro com código.
-        </h1>
-      </div>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+          <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+        </div>
 
-      <div class="greeting-photo">
-        <img src="./assets/img/greeting.png" alt="">
+        <div class="hero-social">
+          <a href="https://github.com/zugouveia" target="_blank" rel="noopener" aria-label="GitHub"><i
+              class="ti ti-brand-github" aria-hidden="true"></i></a>
+          <a href="www.linkedin.com/in/fegouveiab" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+              class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:fegouveiab@gmail.com" aria-label="E-mail"><i class="ti ti-mail" aria-hidden="true"></i></a>
+        </div>
+
       </div>
     </section>
 
-    <div class="page-divider" id="about">
-      <div class="divider"></div>
-    </div>
-
-    <!-- ABOUT ME -->
-    <section class="about-me-container">
-      <div class="about-me">
-        <div id="about-me-title">
-
-          <span>Minha jornada no desenvolvimento</span>
-
-          <div class="divider"></div>
-
-          <div class="cv">
-            <div>
-              <button>
-                <a href="./assets/pdf/Currículo.pdf" target="_blank">Download CV</a>
-              </button>
-            </div>
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="wrap">
+        <p class="section-label">Sobre</p>
+        <div class="about-grid">
+          <p class="about-text">
+            Atualmente curso Análise e Desenvolvimento de Sistemas na PUC Minas, com foco em desenvolvimento full-stack
+            e arquitetura de software. Ao longo do curso, venho construindo aplicações práticas com HTML, CSS e
+            JavaScript no frontend e C#, ASP.NET Core, Entity Framework Core e PostgreSQL no backend, sempre buscando
+            unir uma boa experiência de uso a um código bem estruturado por trás.
+          </p>
+          <div class="about-actions">
+            <a href="assets/cv-fernanda-gouveia.pdf" class="btn btn-primary" download>
+              <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar CV
+            </a>
+            <a href="#projetos" class="btn btn-ghost">
+              <i class="fa-solid fa-code" aria-hidden="true"></i> Ver projetos
+            </a>
           </div>
-
         </div>
-
-        <article id="about-me-text">
-          <p>
-            Atualmente, estou em formação em Análise e Desenvolvimento de Sistemas, aprofundando meus conhecimentos em
-            Engenharia de Software, programação Full Stack e Arquitetura de Dados. Já consolidei uma base sólida com
-            certificações <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JavaScript</strong>, o que me permite
-            criar interfaces bem estruturadas, visualmente atraentes e
-            interativas.
-          </p>
-          <p>
-            Além da técnica, busco sempre evoluir em áreas como design, usabilidade, modelagem de sistemas e boas
-            práticas de desenvolvimento. Acredito que um bom projeto é aquele que, além de ser esteticamente agradável,
-            é intuitivo, acessível e estrategicamente planejado. Meu objetivo é continuar aprimorando minhas habilidades
-            para criar soluções que unam tecnologia, criatividade.
-          </p>
-        </article>
       </div>
     </section>
 
-    <!-- CONHECIMENTOS -->
-    <section class="knowledge-container">
-      <div class="knowledge">
-        <h3>Meus conhecimentos</h3>
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="wrap">
+        <p class="section-label">Conhecimentos</p>
 
-        <div class="divider"></div>
-
-        <div class="knowledge-cards">
-          <div class="cards card-html">
-            <i class="fa-brands fa-html5"></i>
-            <span>HTML5</span>
+        <div class="skills-group">
+          <h3 class="skills-heading">Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-pill"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+            <div class="skill-pill"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+            <div class="skill-pill"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+            <div class="skill-pill"><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind CSS</span></div>
+            <div class="skill-pill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
           </div>
-
-          <div class="cards card-css">
-            <i class="fa-brands fa-css3-alt"></i>
-            <span>CSS3</span>
-          </div>
-
-          <div class="cards card-js">
-            <i class="fa-brands fa-js"></i>
-            <span>JavaScript</span>
-          </div>
-
-          <div class="cards card-wp">
-            <i class="fa-brands fa-wordpress"></i>
-            <span>WordPress</span>
-          </div>
-
         </div>
+
+        <div class="skills-group">
+          <h3 class="skills-heading">Backend</h3>
+          <div class="skills-grid">
+            <div class="skill-pill"><i class="devicon-csharp-plain colored"></i><span>C#</span></div>
+            <div class="skill-pill"><i class="devicon-dotnetcore-plain colored"></i><span>.NET Core</span></div>
+            <div class="skill-pill"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-heading">Ferramentas</h3>
+          <div class="skills-grid">
+            <div class="skill-pill"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+            <div class="skill-pill"><i class="devicon-github-original"></i><span>GitHub</span></div>
+            <div class="skill-pill"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+            <div class="skill-pill"><i class="devicon-supabase-plain colored"></i><span>Supabase</span></div>
+            <div class="skill-pill"><i class="devicon-vercel-original"></i><span>Vercel</span></div>
+            <div class="skill-pill"><i class="devicon-netlify-plain"></i><span>Netlify</span></div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- PROJETOS -->
-    <section class="projects-container">
-      <div class="projects" id="projects">
+    <section class="section" id="projetos">
+      <div class="wrap">
+        <p class="section-label">Projetos</p>
 
-        <h3>Meus Projetos</h3>
+        <div class="projects-grid">
 
-        <div class="divider"></div>
-
-        <div class="wrapper-container">
-          <div class="wrapper">
-
-            <!-- BATMAN -->
-            <div class="image">
-              <img src="./assets/img/batman-bg.jpg" alt="">
-              <div class="project-title">
-                <h1>Batman</h1>
-                <div id="icones">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                </div>
+          <article class="project-card ">
+            <img src="assets/img/fluxo-control.png" alt="Tela do FluxoControl" class="project-img">
+            <div class="project-body">
+              <h3>FluxoControl</h3>
+              <p>Sistema de gestão financeira para autônomos e MEIs, com controle de receitas e
+                despesas, cadastro de clientes e serviços, relatórios financeiros e controle de
+                pagamentos pendentes.</p>
+              <div class="tags">
+                <span class="tag">C#</span>
+                <span class="tag">ASP.NET Core</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
               </div>
-              <div class="project-text">
-                <p>Este site é uma simulação criada para fins de portfólio, inspirada no filme The Batman (2022). Aqui
-                  você encontra uma experiência imersiva com sinopse, trailer, elenco, fotos e até uma área fictícia
-                  para compra de ingressos. </p>
-                <a href="https://filmebatman.netlify.app" target="_blank">
-                  <button>
-                    <span>Visite o site</span>
-                  </button>
-                </a>
+              <div class="project-links">
+                <a href="https://fluxo-control.vercel.app" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-external-link" aria-hidden="true"></i> Ver projeto</a>
+                <a href="https://github.com/zugouveia/SEU-REPO-FLUXOCONTROL" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-code" aria-hidden="true"></i> Ver código</a>
               </div>
             </div>
+          </article>
 
-            <!-- LEXFORTIS -->
-            <div class="image">
-              <img src="./assets/img/lexfortis-bg.jpg" alt="">
-              <div class="project-title">
-                <h1>LexFortis</h1>
-                <div id="icones">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                </div>
+          <article class="project-card">
+            <img src="assets/img/linkway-bg.jpg" alt="Tela do LinkWay" class="project-img">
+            <div class="project-body">
+              <h3>LinkWay</h3>
+              <p>Plataforma para agrupar links pessoais e profissionais em um só lugar, ideal
+                para redes sociais e criadores de conteúdo.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
               </div>
-
-              <div class="project-text">
-                <p>Este site é uma simulação criada para fins de portfólio, representando um escritório de advocacia
-                  fictício chamado LexFortis. Aqui, você pode explorar seções sobre a empresa, áreas de atuação,
-                  agendamento de consultas e contato</p>
-                <a href="https://lexfortis.netlify.app" target="_blank">
-                  <button>
-                    <span>Visite o site</span>
-                  </button>
-                </a>
-              </div>
-
-            </div>
-
-            <!-- LINKWAY -->
-            <div class="image">
-              <img src="./assets/img/linkway-bg.jpg" alt="">
-              <div class="project-title">
-                <h1>LinkWay</h1>
-                <div id="icones">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-js"></i>
-                </div>
-              </div>
-              <div class="project-text">
-                <p>LinkWay é uma plataforma que permite agrupar todos os seus links em um só lugar. Ideal para redes
-                  sociais, negócios e criadores de conteúdo, ele facilita o acesso às suas páginas, oferecendo uma
-                  experiência organizada e profissional.</p>
-                <a href="https://linkway.netlify.app" target="_blank">
-                  <button>
-                    <span>Visite o site</span>
-                  </button>
-                </a>
-              </div>
-
-            </div>
-
-            <!-- COUNTER -->
-            <div class="image">
-              <img src="./assets/img/counter.png" alt="">
-              <div class="project-title">
-                <h1>Counter</h1>
-                <div id="icones">
-                  <i class="fa-brands fa-html5"></i>
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <i class="fa-brands fa-js"></i>
-                </div>
-              </div>
-              <div class="project-text">
-                <p> Counter é uma site simples e funcional para controle de contadores digitais. Permite incrementar,
-                  decrementar, salvar e resetar valores de forma intuitiva. Ideal para contagem de tarefas, exercícios,
-                  inventários ou qualquer situação que necessite de um controle numérico prático e acessível. </p>
-                <a href="https://appcontagem.netlify.app" target="_blank">
-                  <button>
-                    <span>Visite o site</span>
-                  </button>
-                </a>
+              <div class="project-links">
+                <a href="https://fluxo-control.vercel.app" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-external-link" aria-hidden="true"></i> Ver projeto</a>
+                <a href="https://github.com/zugouveia/SEU-REPO-FLUXOCONTROL" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-code" aria-hidden="true"></i> Ver código</a>
               </div>
             </div>
+          </article>
 
-            <!-- EM BREVE -->
-            <div class="image">
-              <img src="./assets/img/black-img.png" alt="">
-              <div class="project-title">
-                <h1>EM BREVE</h1>
-                <div id="icones">
-
-                </div>
+          <article class="project-card">
+            <img src="assets/img/counter.png" alt="Tela do Counter" class="project-img">
+            <div class="project-body">
+              <h3>Counter</h3>
+              <p>Aplicação simples de contador interativo, feita para praticar manipulação de
+                DOM e eventos em JavaScript puro.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
               </div>
-
-              <!-- <div class="project-text">
-                <p>Este site é uma simulação criada para fins de portfólio, representando um escritório de advocacia
-                  fictício chamado LexFortis. Aqui, você pode explorar seções sobre a empresa, áreas de atuação,
-                  agendamento de consultas e contato</p>
-                <a href="https://lexfortis.netlify.app" target="_blank">
-                  <button>
-                    <span>Visite o site</span>
-                  </button>
-                </a>
-              </div> -->
-
+              <div class="project-links">
+                <a href="https://fluxo-control.vercel.app" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-external-link" aria-hidden="true"></i> Ver projeto</a>
+                <a href="https://github.com/zugouveia/SEU-REPO-FLUXOCONTROL" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-code" aria-hidden="true"></i> Ver código</a>
+              </div>
             </div>
+          </article>
 
-          </div>
+          <article class="project-card">
+            <img src="assets/img/lexfortis-bg.jpg" alt="Tela do LexFortis" class="project-img">
+            <div class="project-body">
+              <h3>LexFortis</h3>
+              <p>Site institucional simulado para um escritório de advocacia, com áreas de
+                atuação, agendamento de consultas e contato.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://fluxo-control.vercel.app" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-external-link" aria-hidden="true"></i> Ver projeto</a>
+                <a href="https://github.com/zugouveia/SEU-REPO-FLUXOCONTROL" target="_blank" rel="noopener"><i
+                    class="fa-solid fa-code" aria-hidden="true"></i> Ver código</a>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="project-card project-card-soon">
+            <div class="project-body project-body-soon">
+              <i class="ti fa-solid fa-hammer" aria-hidden="true"></i>
+              <h3>Em breve</h3>
+              <p>Novo projeto em construção.</p>
+            </div>
+          </article>
+
+
         </div>
-
       </div>
     </section>
 
     <!-- CONTATO -->
-    <section class="contato-container" id="contact">
-      <div class="contato">
-        <h3>Entre em contato comigo!</h3>
-
-        <div class="divider"></div>
-
-        <div class="contato-cards">
-
-          <a href="https://wa.me/+5521967171433" target="_blank">
-            <div class="social-cards">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span id="social-title">Whatsapp</span>
-              <span>(21)96717-1433</span>
-            </div>
+    <section class="section section-alt" id="contato">
+      <div class="wrap contact-wrap">
+        <p class="section-label">Contato</p>
+        <h2 class="contact-heading">Vamos conversar?</h2>
+        <p class="contact-text">Aberta a oportunidades de estágio em desenvolvimento.</p>
+        <div class="contact-actions">
+          <a href="mailto:fegouveiabl@gmail.com" class="btn btn-primary">
+            <i class="fa-solid fa-envelope " aria-hidden="true"></i> Enviar e-mail
           </a>
-
-          <a href="mailto:zugouveiab@gmail.com" target="_blank">
-            <div class="social-cards">
-              <i class="fa-solid fa-envelope"></i>
-              <span id="social-title">Email</span>
-              <span>zugouveiab@gmail.com</span>
-            </div>
+          <a href="https://linkedin.com/in/fegouveiab" target="_blank" rel="noopener" class="btn btn-ghost">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
           </a>
-
-          <div class="social-cards">
-            <i class="fa-solid fa-location-dot"></i>
-            <span id="social-title">Localização</span>
-            <span>Rio de Janeiro</span>
-          </div>
-
+          <a href="https://github.com/zugouveia" target="_blank" rel="noopener" class="btn btn-ghost">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+          </a>
         </div>
-
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <!-- DIV PARA DIVIDER E SOCIAL MEDIA -->
-      <div class="icon-container">
-        <!-- <div class="divider"></div> -->
-        <div class="social-media">
-          <a href="http://instagram.com/zugouveia" target="_blank">
-            <i class="fa-brands fa-square-instagram" id="instagram-icon"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/fegouveiab/" target="_blank">
-            <i class="fa-brands fa-linkedin-in" id="linkedin-icon"></i>
-          </a>
-
-          <a href="https://github.com/zugouveia" target="_blank">
-            <i class="fa-brands fa-github" id="github-icon"></i>
-          </a>
-        </div>
-      </div>
-      <span class="copyright">&COPY; 2025 Zu Gouveia</span>
-      <span class="rights">Todos os direitos reservados</span>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>Feito por Zu Gouveia</span>
+      <i class="fa-solid fa-heart" aria-label="Coração"></i>
     </div>
   </footer>
 
-  <script type="text/javascript" src="./script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

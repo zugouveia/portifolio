@@ -8,12 +8,6 @@
 
   <meta name="description" content="Portfólio Zu Gouveia">
 
-  <!-- fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-
   <!-- icones -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -26,18 +20,16 @@
 
 <body>
 
-  <header class="site-header">
+  <header>
     <div class="wrap header-inner">
-      <a href="#top" class="wordmark">ZU GOUVEIA</a>
+      <a href="#top" class="logo">ZU GOUVEIA</a>
       <nav class="nav" id="nav">
         <a href="#sobre">Sobre</a>
         <a href="#skills">Skills</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
       </nav>
-      <!-- <a href="assets/cv-fernanda-gouveia.pdf" class="btn btn-ghost btn-small" download>
-        <i class="ti ti-file-download" aria-hidden="true"></i> CV
-      </a> -->
+
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -46,13 +38,17 @@
 
   <main id="top">
 
-    <!-- HERO/ APRESENTAÇÃO -->
+    <!-- APRESENTAÇÃO -->
     <section class="hero">
       <div class="wrap hero-inner">
-        <img src="assets/img/photo-perfil.png" alt="Foto de Fernanda Gouveia" class="greeting-photo">
-        <p class="eyebrow">Desenvolvedora em formação</p>
-        <p class="hero-alt">Oi! MEU NOME É FERNANDA GOUVEIA, MAS PODE ME CHAMAR DE ZU GOUVEIA!</p>
-        <p class="hero-role">Sou uma Desenvolvedora que adora transformar ideias em soluções digitais robustas e
+        <img src="assets/img/photo-perfil.png" alt="Foto de Fernanda Gouveia" class="hero-photo">
+        <p class="hero-role-title">Desenvolvedora de Software em formação</p>
+        <p class="hero-greeting">
+          <i class="fa-solid fa-less-than"></i>
+          Oi! Meu nome é Fernanda Gouveia, mas pode me chamar de Zu!
+          <i class="fa-solid fa-greater-than"></i>
+        </p>
+        <p class="hero-text">Sou uma Desenvolvedora que adora transformar ideias em soluções digitais robustas e
           experiências criativas. Minha paixão é criar sistemas e interfaces que não só funcionem bem, mas que também
           encantem quem os usa. Acredito que tecnologia é uma forma de arte e eu estou aqui para projetar o futuro com
           código.</p>
@@ -62,36 +58,31 @@
           <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
         </div>
 
-        <div class="hero-social">
-          <a href="https://github.com/zugouveia" target="_blank" rel="noopener" aria-label="GitHub"><i
-              class="ti ti-brand-github" aria-hidden="true"></i></a>
-          <a href="www.linkedin.com/in/fegouveiab" target="_blank" rel="noopener" aria-label="LinkedIn"><i
-              class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
-          <a href="mailto:fegouveiab@gmail.com" aria-label="E-mail"><i class="ti ti-mail" aria-hidden="true"></i></a>
-        </div>
-
       </div>
     </section>
 
     <!-- SOBRE -->
     <section class="section" id="sobre">
       <div class="wrap">
-        <p class="section-label">Sobre</p>
+        <p class="section-title">Sobre</p>
         <div class="about-grid">
+
           <p class="about-text">
             Atualmente curso Análise e Desenvolvimento de Sistemas na PUC Minas, com foco em desenvolvimento full-stack
             e arquitetura de software. Ao longo do curso, venho construindo aplicações práticas com HTML, CSS e
             JavaScript no frontend e C#, ASP.NET Core, Entity Framework Core e PostgreSQL no backend, sempre buscando
             unir uma boa experiência de uso a um código bem estruturado por trás.
           </p>
+
           <div class="about-actions">
-            <a href="assets/Currículo - Fernanda Gouveia.pdf" class="btn btn-primary" download>
-              <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar CV
+            <a href="assets/Currículo - Fernanda Gouveia.pdf" class="btn btn-primary" target="_blank">
+              <i class="fa-solid fa-download" aria-hidden="true"></i> Ver CV
             </a>
             <a href="#projetos" class="btn btn-ghost">
               <i class="fa-solid fa-code" aria-hidden="true"></i> Ver projetos
             </a>
           </div>
+
         </div>
       </div>
     </section>
@@ -99,39 +90,99 @@
     <!-- SKILLS -->
     <section class="section section-alt" id="skills">
       <div class="wrap">
-        <p class="section-label">Conhecimentos</p>
+        <p class="section-title">Conhecimentos</p>
 
         <div class="skills-group">
           <h3 class="skills-heading">Frontend</h3>
           <div class="skills-grid">
-            <div class="skill-pill"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
-            <div class="skill-pill"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
-            <div class="skill-pill"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
-            <div class="skill-pill"><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind CSS</span></div>
-            <div class="skill-pill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-            <div class="skill-pill"><i class="devicon-react-original colored"></i><span>React</span></div>
+
+            <div class="skill-pill">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span>
+            </div>
+
+            <div class="skill-pill"><i class="devicon-javascript-plain colored">
+              </i><span>JavaScript</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-react-original colored"></i>
+              <span>React</span>
+            </div>
+
           </div>
         </div>
 
         <div class="skills-group">
           <h3 class="skills-heading">Backend</h3>
           <div class="skills-grid">
-            <div class="skill-pill"><i class="devicon-csharp-plain colored"></i><span>C#</span></div>
-            <div class="skill-pill"><i class="devicon-dotnetcore-plain colored"></i><span>.NET Core</span></div>
-            <div class="skill-pill"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
-            <div class="skill-pill"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+
+            <div class="skill-pill">
+              <i class="devicon-csharp-plain colored"></i>
+              <span>C#</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-dotnetcore-plain colored"></i>
+              <span>.NET Core</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-postgresql-plain colored"></i>
+              <span>PostgreSQL</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
+            </div>
+
           </div>
         </div>
 
         <div class="skills-group">
           <h3 class="skills-heading">Ferramentas</h3>
           <div class="skills-grid">
-            <div class="skill-pill"><i class="devicon-git-plain colored"></i><span>Git</span></div>
-            <div class="skill-pill"><i class="devicon-github-original"></i><span>GitHub</span></div>
-            <div class="skill-pill"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
-            <div class="skill-pill"><i class="devicon-supabase-plain colored"></i><span>Supabase</span></div>
-            <div class="skill-pill"><i class="devicon-vercel-original"></i><span>Vercel</span></div>
-            <div class="skill-pill"><i class="devicon-netlify-plain"></i><span>Netlify</span></div>
+
+            <div class="skill-pill">
+              <i class="devicon-git-plain colored"></i>
+              <span>Git</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-github-original"></i>
+              <span>GitHub</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-docker-plain colored"></i>
+              <span>Docker</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-supabase-plain colored"></i>
+              <span>Supabase</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-vercel-original"></i>
+              <span>Vercel</span>
+            </div>
+
+            <div class="skill-pill">
+              <i class="devicon-netlify-plain"></i>
+              <span>Netlify</span>
+
+            </div>
           </div>
         </div>
 
@@ -141,7 +192,7 @@
     <!-- PROJETOS -->
     <section class="section" id="projetos">
       <div class="wrap">
-        <p class="section-label">Projetos</p>
+        <p class="section-title">Projetos</p>
 
         <div class="projects-grid">
 
@@ -153,7 +204,7 @@
               <p>Sistema de gestão financeira para autônomos e MEIs, com controle de receitas e
                 despesas, cadastro de clientes e serviços, relatórios financeiros e controle de
                 pagamentos pendentes.</p>
-              <div class="tags">
+              <div class="tags-container">
                 <span class="tag">C#</span>
                 <span class="tag">ASP.NET Core</span>
                 <span class="tag">PostgreSQL</span>
@@ -175,7 +226,7 @@
               <h3>Counter</h3>
               <p>Aplicação de contador interativo construída em React, com componentização
                 e gerenciamento de estado via hooks.</p>
-              <div class="tags">
+              <div class="tags-container">
                 <span class="tag">React</span>
                 <span class="tag">JavaScript</span>
                 <span class="tag">CSS</span>
@@ -196,7 +247,7 @@
               <h3>LinkWay</h3>
               <p>Plataforma para agrupar links pessoais e profissionais em um só lugar, ideal
                 para redes sociais e criadores de conteúdo.</p>
-              <div class="tags">
+              <div class="tags-container">
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
                 <span class="tag">JavaScript</span>
@@ -217,7 +268,7 @@
               <h3>LexFortis</h3>
               <p>Site institucional simulado para um escritório de advocacia, com áreas de
                 atuação, agendamento de consultas e contato.</p>
-              <div class="tags">
+              <div class="tags-container">
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
               </div>
@@ -247,7 +298,7 @@
     <!-- CONTATO -->
     <section class="section section-alt" id="contato">
       <div class="wrap contact-wrap">
-        <p class="section-label">Contato</p>
+        <p class="section-title">Contato</p>
         <h2 class="contact-heading">Vamos conversar?</h2>
         <p class="contact-text">Aberta a oportunidades de estágio em desenvolvimento.</p>
         <div class="contact-actions">

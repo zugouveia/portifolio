@@ -1,15 +1,4 @@
 :root {
-  /* --bg: #12181b;
-  --surface: #1b2328;
-  --surface-alt: #161d21;
-  --text-primary: #f5f1e6;
-  --text-secondary: #b9b29c;
-  --text-muted: #8c8674;
-  --gold: #c9a24b;
-  --gold-soft: rgba(201, 162, 75, 0.14);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-gold: rgba(201, 162, 75, 0.35); */
-
   --bg: #14201c;
   --surface: #1c2b25;
   --surface-alt: #101a16;
@@ -21,9 +10,9 @@
   --border: rgba(255, 255, 255, 0.08);
   --border-gold: rgba(184, 147, 90, 0.35);
 
-  --font-serif: "Fraunces", serif;
-  --font-mono: "IBM Plex Mono", monospace;
-  --font-sans: "Inter", sans-serif;
+  --font-serif: "Arvo", serif;
+  --font-mono: "Fira Code", monospace;
+  --font-sans: "Roboto", sans-serif;
 
   --radius: 10px;
   --wrap: 1080px;

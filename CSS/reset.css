@@ -1,13 +1,9 @@
-/* Reset CSS Moderno */
-
-/* Remove margens e paddings padrão */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Ajusta fontes para uma experiência mais consistente */
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -27,19 +23,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Remove estilos padrão de listas */
 ul,
 ol {
   list-style: none;
 }
 
-/* Remove decoração de links */
 a {
   text-decoration: none;
   color: inherit;
 }
-
-/* Define um estilo básico para elementos de formulário */
 input,
 button,
 textarea,
@@ -49,20 +41,14 @@ select {
   background: none;
   outline: none;
 }
-
-/* Botões e elementos clicáveis como cursor pointer */
 button {
   cursor: pointer;
 }
-
-/* Garante que imagens não ultrapassem o contêiner */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-/* Zera estilos de tabelas */
 table {
   border-collapse: collapse;
   border-spacing: 0;
